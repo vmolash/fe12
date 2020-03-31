@@ -1,13 +1,13 @@
 import React from 'react';
-import Menu from "../Menu/Menu";
-import Content from "../Main/Content";
+
 import Contact from "./Contact";
+import FooterMenu from "./FooterMenu";
 
 
-function Footer() {
+function Footer(props) {
     return (
       <div className="footer">
-          <Menu />
+          <FooterMenu menuItems={props.menuItems}/>
           <Contact />
       </div>
     );

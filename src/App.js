@@ -5,11 +5,30 @@ import Content from "./Components/Main/Content";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+
+    const menuItems = [
+        {
+            title: 'Main',
+            url: 'https://google.com'
+        },
+        {
+            title: 'About',
+            url: 'https://google.com'
+        },
+        {
+            title: 'Contacts',
+            url: 'https://google.com'
+        },
+        {
+            title: 'Deals',
+            url: 'https://google.com'
+        }
+    ];
     return (
         <div className="App">
-            <Header/>
+            <Header menuItems={menuItems} />
             <Content />
-            <Footer />
+            <Footer menuItems={menuItems}/>
         </div>
     );
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import Logo from "./Logo";
-import Menu from "../Menu/Menu";
+import HeaderMenu from './HeaderMenu';
 
 
-function Header() {
+function Header(props) {
     return (
       <div className="header">
           <Logo />
-          <Menu />
+          <HeaderMenu menuItems={props.menuItems}/>
       </div>
     );
 
